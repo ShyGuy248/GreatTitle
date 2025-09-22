@@ -1,4 +1,6 @@
 ﻿using System.ComponentModel.Design;
+using System.Drawing;
+using System.Security.Cryptography.X509Certificates;
 
 Console.WriteLine("H-hey, so um, I know this isn't a great place to be doing this, but we're supposed to make you smile, and this is, like, literally the only way to do that, at least, that's what we were told. So, um, first of all, what's your name?");
 //this sets the players name. this is shown with string interpolation a little bit later as well
@@ -50,7 +52,7 @@ else
 
 }
 //interpolation was also used here, I didn't realize I was supposed to use it at first LOL
-//from here on out, the same stuff mostly applies from before, so you probably know how it works at this point. The following code is only really used for new questions/answers
+//from here on out, the same stuff mostly applies from before, so you probably know how it works at this point. The following code is only really used for new questions/answers, and follows a very defined pattern
 Console.WriteLine("Second question. In the first episode, The character Desmond is famously voiced by someone from this YouTube channel:");
 Console.WriteLine("A: RedLetterMedia B: MeatCanyon");
 Console.WriteLine("C: Vinesauce D: Dead Meat");
@@ -128,4 +130,110 @@ else if (AnswerSix == "president jimble")
 else
 {
     Console.WriteLine($"Aw, man. I was really hoping you'd get that one. But you're still stuck at {points} points...");
+}
+Console.WriteLine("Sixth Question. In the finale to season one, The Smiling Friends go to what country?");
+Console.WriteLine("A: Brazil B: Japan");
+Console.WriteLine("C: Mexico D: Canada");
+string AnswerSeven = Console.ReadLine();
+if (AnswerSeven == "A")
+{
+    points += 1;
+    Console.WriteLine($"Yeah, that- that trip really sucked. You do NOT wanna know the specifics on that- anyways, {points} points, woohoo...");
+}
+else if (AnswerSeven == "brazil")
+{
+    points += 1;
+    Console.WriteLine($"Yeah, that- that trip really sucked. You do NOT wanna know the specifics on that- anyways, {points} points, woohoo...");
+}
+else
+{
+    Console.WriteLine($"Don't- just, don't even ask, man. {points} points.");
+}
+Console.WriteLine("Seventh Question. Why was the Mr. Frog show cancelled?");
+Console.WriteLine("A: Low ratings B: Mr. Frog put a TMZ reporter in his mouth");
+Console.WriteLine("C: Political Controversy D: Mr. Frog smacked a child upside the head on camera and didn't apologize");
+string AnswerEight = Console.ReadLine();
+if (AnswerEight == "B")
+{
+    points += 1;
+    Console.WriteLine($"Yeah, let's just- move on from that, I don't wanna talk about it. {points} points.");
+}
+else if (AnswerEight == "mr. frog put a tmz reporter in his mouth")
+{
+    points += 1;
+    Console.WriteLine($"Yeah, let's just- move on from that, I don't wanna talk about it. {points} points.");
+}
+else
+{
+    Console.WriteLine($"Oh, so you don't know about what happened. Don't look it up. Seriously. {points} points.");
+}
+Console.WriteLine("Eighth Question. What was the name of that weird guy who stole all of me and Pim's stuff that one time?");
+Console.WriteLine("A: Roy Dismey B: Gwimbly");
+Console.WriteLine("C: Glep D: Shrimpina");
+string AnswerNine = Console.ReadLine();
+if (AnswerNine == "A")
+{
+    points += 1;
+    Console.WriteLine($"How the hell did you know about tha- whatever, we're almost done anyways. {points} points.");
+}
+else if (AnswerNine == "roy dismey")
+{
+    points += 1;
+    Console.WriteLine($"How the hell did you know about tha- whatever, we're almost done anyways. {points} points.");
+}
+else
+{
+    Console.WriteLine($"Yeah, I think I-I'd be concerned if you did know about that, honestly. {points} points.");
+}
+Console.WriteLine("Ninth Question. Who was the culprit in Simon S. Saltys murder?");
+Console.WriteLine("A: Crazy Cup B: Nobody, it turned out he had a heart attack");
+Console.WriteLine("C:All of the mascots D: Mustard");
+//Yeah, there might be a faster way to do this, but I think this is fairly readable at least and works pretty well for what I'm going for.
+string AnswerTen = Console.ReadLine();
+if (AnswerTen == "B")
+{
+    points += 1;
+    Console.WriteLine($"Ok, it's getting like, really weird at this point. Who even wrote this...? {points} points.");
+}
+else if (AnswerTen == "nobody")
+{
+    points += 1;
+    Console.WriteLine($"Ok, it's getting like, really weird at this point. Who even wrote this...? {points} points.");
+}
+else if (AnswerTen == "nobody, it turned out he had a heart attack")
+{
+    points += 1;
+    Console.WriteLine($"Ok, it's getting like, really weird at this point. Who even wrote this...? {points} points.");
+}
+else
+{
+    Console.WriteLine($"Yeah, I'm honestly glad you didn't know that, it's getting like, super weird. {points} points.");
+}
+Console.WriteLine("Alright, last question, then we can all go home and forget this ever happened.");
+Console.WriteLine("What language does Glep speak?");
+Console.WriteLine("A: Complete Gibberish B: Wingon");
+Console.WriteLine("C: Klingon D: Japanese");
+string AnswerEleven  = Console.ReadLine();
+if (AnswerEleven == "B")
+{
+    points += 1;
+    Console.WriteLine($"Okay, thank god you got that right. You got {points} points, which means...");
+}
+else if (AnswerEleven == "wingon")
+{
+    points += 1;
+    Console.WriteLine($"Okay, thank god you got that right. You got {points} points, which means...");
+}
+else
+{
+    Console.WriteLine($"Okay, well, you got that one wrong, but I don't think it even matters at this point. You got {points} points, which means...");
+}
+if (points > 5)
+{
+    Console.WriteLine($"You won, {playerName}! You got {points} points, and I think we made you smile, so we can all go home and forget this ever happened.");
+}
+else
+{
+    Console.WriteLine($"You lost, {playerName} You only got {points} points,  But don't freak out, you, oh, you seem pretty happy anyways. Like, REALLY happy. Um...");
+    Console.WriteLine("We'll just- go home, and forget any of this ever happened. Okay? Okay.");
 }
