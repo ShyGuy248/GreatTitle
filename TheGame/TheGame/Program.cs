@@ -8,7 +8,7 @@ string playerName = Console.ReadLine();
 Console.WriteLine($"Ok, so your name is {playerName}. that's good to know.");
 
 Console.WriteLine("Anyways, we're supposed to like, ask you some trivia questions about our life, or whatever. I'm just reading off of this sheet here... it says that we're gonna ask you 10 questions, you get a point for each one. and if you get 5 or more right, you win, apparently.");
-Console.WriteLine("Did you like, get all that?");
+Console.WriteLine("Did you like, get all that? just answer, yes or no.");
 string AnswerOne = Console.ReadLine();
 if (AnswerOne == "yes")
 {
