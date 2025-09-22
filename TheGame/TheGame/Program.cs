@@ -222,7 +222,10 @@ else
 {
     Console.WriteLine($"Okay, well, you got that one wrong, but I don't think it even matters at this point. You got {points} points, which means...");
 }
+// and we finally reached the end of the questions. the formula for calculating the players points was actually really simple, thankfully. 
+//I thought 5 points was a good, relatively easy goal but not too easy to just blast through with no consequence.
 if (points > 5)
+    
 {
     Console.WriteLine($"You won, {playerName}! You got {points} points, and I think we made you smile, so we can all go home and forget this ever happened.");
 }
