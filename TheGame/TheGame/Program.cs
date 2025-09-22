@@ -5,14 +5,8 @@ using System.Security.Cryptography.X509Certificates;
 Console.WriteLine("H-hey, so um, I know this isn't a great place to be doing this, but we're supposed to make you smile, and this is, like, literally the only way to do that, at least, that's what we were told. So, um, first of all, what's your name?");
 //this sets the players name. this is shown with string interpolation a little bit later as well
 string playerName = Console.ReadLine();
+Console.WriteLine($"Ok, so your name is {playerName}. that's good to know.");
 
-if (playerName == "stinkystinkymrfuck")
-{
-    Console.WriteLine("Alright man, I'm not gonna make you go back and change that, but like, I can tell you're lying.");
-}
-else{
-    Console.WriteLine($"Ok, so your name is {playerName}. that's good to know.");
-}
 Console.WriteLine("Anyways, we're supposed to like, ask you some trivia questions about our life, or whatever. I'm just reading off of this sheet here... it says that we're gonna ask you 10 questions, you get a point for each one. and if you get 5 or more right, you win, apparently.");
 Console.WriteLine("Did you like, get all that?");
 string AnswerOne = Console.ReadLine();
