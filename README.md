@@ -1,4 +1,4 @@
-# GreatTitle
+# Smiling Friends Trivia Game!
 
 ## This is a trivia game about the TV show smiling friends.
 Smiling Friends is a show about a company with the express purpose of making people smile.
